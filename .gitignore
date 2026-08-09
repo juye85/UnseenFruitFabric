@@ -5,3 +5,9 @@ gradle/bin/
 gradle/src/
 *.jar
 *.zip
+gradle/bin/
+gradle/lib/
+gradle/src/
+gradle/init.d/
+gradle/docs/
+gradle/media/
