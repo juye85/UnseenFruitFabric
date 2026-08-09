@@ -1,0 +1,26 @@
+version: '1.0'
+name: build-unseen-fruit
+displayName: 'Build UnseenFruit Fabric 1.16.5'
+triggers:
+  push:
+    branches:
+      include: [main]
+stages:
+  - stage:
+    name: build
+    displayName: 'Gradle Build'
+    steps:
+      - step: shell@bash
+        name: build-step
+        displayName: 'Build mod jar'
+        commands:
+          - apt-get update && apt-get install -y wget unzip
+          - wget -q https://services.gradle.org/distributions/gradle-7.6-bin.zip
+          - unzip -q gradle-7.6-bin.zip -d /opt/
+          - export PATH=$PATH:/opt/gradle-7.6/bin
+          - gradle build --no-daemon
+          - ls -la build/libs/
+        artifacts:
+          - name: MOD_JAR
+            path:
+              - ./build/libs
