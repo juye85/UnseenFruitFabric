@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "unseenfruit",
+  "version": "${version}",
+  "name": "Unseen Fruit",
+  "description": "A mysterious fruit that changes how you see others. Eat it and the world becomes... empty.",
+  "authors": ["thy"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "thy.unseenfruit.UnseenFruitMod"
+    ],
+    "client": [
+      "thy.unseenfruit.UnseenFruitClient"
+    ]
+  },
+  "mixins": [
+    "unseenfruit.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}

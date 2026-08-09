@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "unseenfruit:unseen_fruit"
+        }
+      ],
+      "conditions": [
+        {
+          "type": "minecraft:block_state_property",
+          "block": "unseenfruit:unseen_crop",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "unseenfruit:unseen_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "type": "minecraft:block_state_property",
+          "block": "unseenfruit:unseen_crop",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "unseenfruit:unseen_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "type": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    }
+  ]
+}

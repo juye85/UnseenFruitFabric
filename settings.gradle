@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        maven { url "https://mirrors.tuna.tsinghua.edu.cn/maven-central" }
+        maven { url "https://maven.fabricmc.net/" }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "UnseenFruit"

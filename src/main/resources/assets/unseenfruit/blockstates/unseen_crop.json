@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "unseenfruit:block/unseen_crop_stage0" },
+    "age=1": { "model": "unseenfruit:block/unseen_crop_stage0" },
+    "age=2": { "model": "unseenfruit:block/unseen_crop_stage1" },
+    "age=3": { "model": "unseenfruit:block/unseen_crop_stage1" },
+    "age=4": { "model": "unseenfruit:block/unseen_crop_stage2" },
+    "age=5": { "model": "unseenfruit:block/unseen_crop_stage2" },
+    "age=6": { "model": "unseenfruit:block/unseen_crop_stage3" },
+    "age=7": { "model": "unseenfruit:block/unseen_crop_stage3" }
+  }
+}

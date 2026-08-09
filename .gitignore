@@ -1,0 +1,7 @@
+.gradle/
+build/
+gradle/lib/
+gradle/bin/
+gradle/src/
+*.jar
+*.zip
